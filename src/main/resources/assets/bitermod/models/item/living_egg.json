@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "bitermod:item/example_item"
+    "layer0": "bitermod:item/living_egg"
   }
 }
