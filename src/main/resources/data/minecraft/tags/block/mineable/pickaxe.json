@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "bitermod:pollution_emitter",
+    "bitermod:living_ore",
+    "bitermod:deepslate_living_ore"
+  ]
+}
