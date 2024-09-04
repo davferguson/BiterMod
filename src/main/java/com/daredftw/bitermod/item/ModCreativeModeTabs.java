@@ -30,6 +30,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.POLLUTION_EMITTER.get());
                         output.accept(ModBlocks.LIVING_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_LIVING_ORE.get());
                     })
                     .build());
 
