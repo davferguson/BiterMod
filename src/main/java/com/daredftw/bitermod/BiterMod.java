@@ -1,6 +1,7 @@
 package com.daredftw.bitermod;
 
 import com.daredftw.bitermod.block.ModBlocks;
+import com.daredftw.bitermod.item.ModCreativeModeTabs;
 import com.daredftw.bitermod.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -24,13 +25,14 @@ public class BiterMod {
 
     public BiterMod(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
+        modEventBus.addListener(this::commonSetup);
+        MinecraftForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
-        modEventBus.addListener(this::commonSetup);
 
-        MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
