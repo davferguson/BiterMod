@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "living_egg",
+  "ingredient": {
+    "item": "minecraft:egg"
+  },
+  "result": {
+    "id": "bitermod:living_egg"
+  }
+}

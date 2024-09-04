@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "bitermod:pollution_emitter"
+    }
+  ],
+  "result": {
+    "count": 8,
+    "id": "bitermod:living_egg"
+  }
+}
