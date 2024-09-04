@@ -29,6 +29,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.bitermod.bitermod_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.POLLUTION_EMITTER.get());
+                        output.accept(ModBlocks.LIVING_ORE.get());
                     })
                     .build());
 
