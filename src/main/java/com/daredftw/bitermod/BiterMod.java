@@ -1,6 +1,5 @@
 package com.daredftw.bitermod;
 
-import com.daredftw.bitermod.init.ItemInit;
 import com.daredftw.bitermod.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -16,16 +15,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-//@Mod(BiterMod.MODID)
-//public class BiterMod {
-//    public static final String MODID = "bitermod";
-//
-//    public BiterMod(FMLJavaModLoadingContext context) {
-////        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-//        IEventBus modEventBus = context.getModEventBus();
-//        ItemInit.ITEMS.register(modEventBus);
-//    }
-//}
 @Mod(BiterMod.MODID)
 public class BiterMod {
     public static final String MODID = "bitermod";
@@ -40,10 +29,6 @@ public class BiterMod {
 
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
-
-        // Register Custom Items
-//        ItemInit.ITEMS.register(modEventBus);
-
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
