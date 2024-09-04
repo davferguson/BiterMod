@@ -1,4 +1,6 @@
 {
   "item.bitermod.living_egg": "Living Egg",
-  "item.bitermod.sapphire": "Sapphire"
+  "item.bitermod.sapphire": "Sapphire",
+
+  "block.bitermod.pollution_emitter": "Pollution Emitter"
 }

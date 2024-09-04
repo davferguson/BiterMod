@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "bitermod:block/pollution_emitter"
+    }
+  }
+}

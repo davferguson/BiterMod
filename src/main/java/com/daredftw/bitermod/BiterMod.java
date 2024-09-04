@@ -1,5 +1,6 @@
 package com.daredftw.bitermod;
 
+import com.daredftw.bitermod.block.ModBlocks;
 import com.daredftw.bitermod.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -25,6 +26,7 @@ public class BiterMod {
         IEventBus modEventBus = context.getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -41,6 +43,10 @@ public class BiterMod {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.SAPPHIRE);
             event.accept(ModItems.LIVING_EGG);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.POLLUTION_EMITTER);
         }
     }
 
