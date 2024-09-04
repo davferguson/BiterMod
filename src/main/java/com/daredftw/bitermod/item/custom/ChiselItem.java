@@ -15,7 +15,7 @@ import net.minecraft.world.level.block.Blocks;
 
 import java.util.Map;
 
-public class ChiselItem extends Item {
+public class ChiselItem extends Item { // CTRL + H on Item to see vanilla code
     private static final Map<Block, Block> CHISEL_MAP =
             Map.of(
                     Blocks.STONE, Blocks.STONE_BRICKS,
