@@ -20,6 +20,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.SAPPHIRE.get());
                         output.accept(ModItems.LIVING_EGG.get());
+                        output.accept(ModItems.CHISEL.get());
                     })
                     .build());
 

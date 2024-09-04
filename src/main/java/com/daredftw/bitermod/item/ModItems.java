@@ -1,6 +1,7 @@
 package com.daredftw.bitermod.item;
 
 import com.daredftw.bitermod.BiterMod;
+import com.daredftw.bitermod.item.custom.ChiselItem;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -26,6 +27,8 @@ public class ModItems {
                             .build())
                     .rarity(Rarity.EPIC)
             ));
+    public static final RegistryObject<Item> CHISEL = ITEMS.register("chisel",
+            () -> new ChiselItem(new Item.Properties().durability(32)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
